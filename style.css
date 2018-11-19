@@ -1,0 +1,164 @@
+html, 
+body {
+    font-family: 'Lato';
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+h6 {
+    width: 17rem;
+}
+
+.space {
+    padding: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+
+button:focus,
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.btn-main,
+.btn-main:hover {
+    color: #ffffff;
+    border-radius: 0;
+    background-color: #B28B55;
+    border-color: #B28B55;
+}
+
+.hero {
+    background-image: url('./assets/hero-xs.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: #ffffff;
+    padding: 5rem 2rem;
+}
+
+.hero > .btn-main {
+    margin-top: 3rem;
+}
+
+.black-background {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.black-background > h6 {
+    color: #B28B55;
+    font-weight: 700;
+}
+
+.gray-text {
+    color: #777777;
+}
+
+.silver-text {
+    color: #8b8b8b;
+}
+
+.use-cases > h6 {
+    color: #8b8b8b;
+}
+
+h3.gold {
+    color: #ffffff;
+    background-color: #B28B55;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    margin: 0;
+}
+
+h3.silver {
+    color: #ffffff;
+    background-color: #bfbfbf;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    margin: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot, .dot:hover {
+    background-color: #717171;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides h3 {
+    font-weight: 600;
+}
+
+
+/* Medium devices */
+@media (min-width: 768px) {
+
+    .navbar {
+        padding: 0 8rem;
+    }
+
+}
+
+
+/* Large devices */
+@media (min-width: 992px) {
+
+    .hero {
+        padding: 8rem 5rem;
+        background-image: url('./assets/hero.png');
+        background-position-y: -9rem;
+    }
+
+    .hero > h1 {
+        font-weight: 300;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero > h5 {
+        font-size: 2rem;
+    }
+
+    .hero > p {
+        font-size: 1.5rem;
+    }
+
+    .space {
+        padding: 3rem 4rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+        width: 25rem;
+    }
+}
