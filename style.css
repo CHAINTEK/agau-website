@@ -19,6 +19,19 @@ h6 {
     text-align: center;
 }
 
+.gray-text {
+    color: #777777;
+}
+
+.silver-text {
+    color: #8b8b8b;
+}
+
+.gold-text {
+    color: #B28B55;
+}
+
+
 
 button:focus,
 button:active {
@@ -72,23 +85,6 @@ button:active {
     color: #B28B55;
 }
 
-.gray-text {
-    color: #777777;
-}
-
-.silver-text {
-    color: #8b8b8b;
-}
-
-.gold-text {
-    color: #B28B55;
-    font-weight: 700;
-}
-
-.use-cases > h6 {
-    color: #8b8b8b;
-}
-
 h3.gold {
     color: #ffffff;
     background-color: #B28B55;
@@ -137,7 +133,51 @@ h3.silver {
 }
 
 th > label {
-    width: 7.5rem;
+    width: 8.5rem;
+}
+
+.partners img {
+    margin: 1rem;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+.operating-model-img {
+    display: none;
+}
+
+.app-image {
+    display: none;
+}
+
+.app-mobile {
+    display: block;
+}
+
+.ico {
+    display: none;
+}
+
+.ico-small {
+    display: block;
+}
+
+.links {
+    justify-content: space-between;
+}
+
+.social img {
+    margin-bottom: 2rem;
+}
+
+.why-agau {
+    height: 530px;
+}
+
+.how-it-works {
+    height: 400px;
 }
 
 
@@ -148,8 +188,26 @@ th > label {
         padding: 0 8rem;
     }
 
-}
+    .app-image {
+        display: block;
+    }
 
+    .app-image img {
+        width: 100%;
+    }
+
+    .app-mobile {
+        display: none;
+    }
+
+    .why-agau {
+        height: 300px;
+    }
+    
+    .how-it-works {
+        height: 220px;
+    }
+}
 
 /* Large devices */
 @media (min-width: 992px) {
@@ -181,5 +239,42 @@ th > label {
     h6 {
         font-size: 1.25rem;
         width: 25rem;
+    }
+
+    p {
+        max-width: 40%;
+    }
+
+    .operating-model-img {
+        display: block;
+        width: 100%;
+    }
+
+    .ico {
+        display: block;
+        width: 100%;
+    }
+
+    .ico-small {
+        display: none;
+    }
+
+    .links {
+        justify-content: flex-start;
+    }
+
+    .links a {
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 1200px) { 
+
+    .operating-model-img {
+        width: auto;
+    }
+
+    .ico {
+        width: auto;
     }
 }
