@@ -65,6 +65,29 @@ h6 {
     opacity: .15;
 }
 
+iframe {
+    width: 100%;
+}
+
+h3.gold {
+    color: #ffffff;
+    background-color: #B28B55;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    margin: 0;
+}
+
+h3.silver {
+    color: #ffffff;
+    background-color: #bfbfbf;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    margin: 0;
+}
+
+.partners img {
+    margin: 1rem;
+}
 
 button:focus,
 button:active {
@@ -90,6 +113,9 @@ button:active {
     border-color: #B28B55;
 }
 
+
+/* HERO */
+
 .parallax {
     z-index: -1;
     position: absolute;
@@ -109,25 +135,7 @@ button:active {
     margin-bottom: 2rem;
 }
 
-iframe {
-    width: 100%;
-}
-
-h3.gold {
-    color: #ffffff;
-    background-color: #B28B55;
-    padding: 1.5rem;
-    padding-left: 2rem;
-    margin: 0;
-}
-
-h3.silver {
-    color: #ffffff;
-    background-color: #bfbfbf;
-    padding: 1.5rem;
-    padding-left: 2rem;
-    margin: 0;
-}
+/* SLIDES */
 
 .dot {
     cursor: pointer;
@@ -152,6 +160,18 @@ h3.silver {
     font-weight: 600;
 }
 
+.why-agau {
+    height: 600px;
+}
+
+.how-it-works {
+    height: 400px;
+}
+
+
+/* TABLE */
+
+
 .table th {
     vertical-align: middle;
 }
@@ -164,13 +184,13 @@ th > label {
     width: 8.5rem;
 }
 
-.partners img {
-    margin: 1rem;
-}
+/* FOOTER */
 
 .footer a {
     color: #ffffff;
 }
+
+/* IMAGES */
 
 .operating-model-img {
     display: none;
@@ -202,14 +222,6 @@ th > label {
 
 .social img {
     margin-bottom: 2rem;
-}
-
-.why-agau {
-    height: 600px;
-}
-
-.how-it-works {
-    height: 400px;
 }
 
 /* Medium devices */
@@ -246,6 +258,12 @@ th > label {
 
 /* Large devices */
 @media (min-width: 992px) {
+
+    .sticky-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 
     .hero > .content {
         padding: 6rem 4rem;
