@@ -1,10 +1,12 @@
 html, 
 body {
     font-family: 'Lato';
+    height: 100%;
 }
 
 h2 {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
+    margin-top: 0;
 }
 
 h6 {
@@ -14,6 +16,7 @@ h6 {
 .space {
     padding: 2rem;
 }
+
 
 .center {
     text-align: center;
@@ -31,6 +34,36 @@ h6 {
     color: #B28B55;
 }
 
+.black-background {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.black-background h6 {
+    color: #B28B55;
+    font-weight: 700;
+}
+
+.black-background h3 {
+    color: #B28B55;
+}
+
+.background-decoration {
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+.background-decoration .background-text {
+    opacity: 1;
+}
+
+.background-text {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: -1rem;
+    opacity: .15;
+}
 
 
 button:focus,
@@ -57,32 +90,27 @@ button:active {
     border-color: #B28B55;
 }
 
-.hero {
-    background-image: url('./assets/hero-xs.png');
+.parallax {
+    z-index: -1;
+    position: absolute;
+    background-image: url("./assets/hero.png");
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    color: #ffffff;
-    padding: 5rem 2rem;
+    width: 100%;
+    height: 50rem;
 }
 
-.hero > .btn-main {
+.hero > .content {
+    padding: 4rem 2rem;
+    color: #ffffff;
+}
+
+.content > .btn-main {
     margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
-.black-background {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.black-background h6 {
-    color: #B28B55;
-    font-weight: 700;
-}
-
-.black-background h3 {
-    color: #B28B55;
+iframe {
+    width: 100%;
 }
 
 h3.gold {
@@ -105,7 +133,7 @@ h3.silver {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 0 2.5px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -156,12 +184,16 @@ th > label {
     display: block;
 }
 
-.ico {
+.ico-image {
     display: none;
 }
 
 .ico-small {
     display: block;
+}
+
+.app-mobile {
+    width: 100%;
 }
 
 .links {
@@ -173,16 +205,19 @@ th > label {
 }
 
 .why-agau {
-    height: 530px;
+    height: 600px;
 }
 
 .how-it-works {
     height: 400px;
 }
 
-
 /* Medium devices */
 @media (min-width: 768px) {
+
+    iframe {
+        width: auto;
+    }
 
     .navbar {
         padding: 0 8rem;
@@ -212,13 +247,11 @@ th > label {
 /* Large devices */
 @media (min-width: 992px) {
 
-    .hero {
-        padding: 8rem 5rem;
-        background-image: url('./assets/hero.png');
-        background-position-y: -9rem;
+    .hero > .content {
+        padding: 6rem 4rem;
     }
 
-    .hero > h1 {
+    .hero h1 {
         font-weight: 300;
         font-size: 4rem;
         margin-bottom: 2rem;
@@ -239,10 +272,6 @@ th > label {
     h6 {
         font-size: 1.25rem;
         width: 25rem;
-    }
-
-    p {
-        max-width: 40%;
     }
 
     .operating-model-img {
@@ -266,9 +295,19 @@ th > label {
     .links a {
         margin-right: 3rem;
     }
+
+    .background-text {
+        font-size: 4.5rem;
+        margin-bottom: -1.5rem;
+        opacity: 0.1;
+    }
 }
 
-@media (min-width: 1200px) { 
+@media (min-width: 1440px) { 
+
+    .parallax {
+        background-image: url("./assets/hero-xl.png");
+    }
 
     .operating-model-img {
         width: auto;
