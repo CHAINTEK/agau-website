@@ -224,7 +224,187 @@ th > label {
     margin-bottom: 2rem;
 }
 
+/* TEAM */
+
+.team-hero {
+	background-color: #f8f9fa;
+	color: #fff;
+	padding: 4rem 8rem 0 8rem !important;
+}
+
+.team-hero__title {
+	font-size: 12rem;
+}
+
+.team {
+	display: flex;
+	flex-direction: column;
+	padding: 4rem 8rem 0 8rem !important;
+}
+
+.team-row {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1em;
+}
+
+.team-row-header {
+	color: orange;
+	font-size: 1.5em;
+	margin: 2em 0 4em 5em;
+}
+
+.team-row-items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.team-row-items__item {
+	max-width: 12em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.team-row-items__item-container {
+	background-color: orange;
+	color: #fff;
+	border-radius: 50%;
+	min-width: 12em;
+	min-height: 12em;
+	text-align: center;
+	line-height: 12em;
+}
+
+.team-row-items__item-container--image {
+	color: #fff;
+	border-radius: 50%;
+	min-width: 12em;
+	min-height: 12em;
+	text-align: center;
+	line-height: 12em;
+}
+
+.team-row-items__item-container--info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team-row-items__item--avatar {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.team-row-items__item-container--image > img {
+	max-width: 12em;
+	max-height: 12em;
+	border: 5px solid orange;
+	border-radius: 50%;
+}
+
+.team-row-items__item--name {
+	color: #000;
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.team-row-items__item--surname {
+	color: #000;
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.team-row-items__item--position {
+	color: #000;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.team-row-items__item--company {
+	color: gray;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.team-row-items__item--link {
+	width: 1.5em;
+	height: 1.5em;
+	background-color: lightgray;
+	border-radius: 50%;
+	color: #fff !important;
+	text-align: center;
+	line-height: 1.4em;
+	font-size: 1.5em;
+	font-weight: bolder;
+	margin-top: 1em;
+}
+
+.team-row-items__item--investor {
+	color: #000;
+	font-size: 2.5em;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.team-row-items__item--support {
+	color: #000;
+	font-size: 1em;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.team-row__items--item-blank {
+	width: 12em;
+	height: 12em;
+	visibility: hidden;
+}
+
 /* Medium devices */
+
+@media (max-width: 640px) {
+
+	.team {
+		padding: 4rem 4rem 0 4rem !important;
+	}
+
+	.team-row-items {
+		justify-content: center;
+	}
+
+	.team-row-items__item {
+		min-width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.team-hero {
+		padding-left: 4rem !important;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.team-hero__title {
+		font-size: 6em;
+	}
+
+	.team-row-header {
+		margin-left: 0;
+	}
+}
+
 @media (min-width: 768px) {
 
     iframe {
@@ -319,6 +499,12 @@ th > label {
         margin-bottom: -1.5rem;
         opacity: 0.1;
     }
+}
+
+@media (max-width: 1220px) {
+	.team-row__items--item-blank {
+		display: none;
+	}
 }
 
 @media (min-width: 1440px) { 
