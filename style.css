@@ -249,7 +249,7 @@ th > label {
 }
 
 .team-row-header {
-	color: orange;
+	color: rgb(215 156 46);
 	font-size: 1.5em;
 	margin: 2em 0 4em 5em;
 }
@@ -269,7 +269,7 @@ th > label {
 }
 
 .team-row-items__item-container {
-	background-color: orange;
+	background-color: rgb(215 156 46);
 	color: #fff;
 	border-radius: 50%;
 	min-width: 12em;
@@ -302,7 +302,7 @@ th > label {
 .team-row-items__item-container--image > img {
 	max-width: 12em;
 	max-height: 12em;
-	border: 5px solid orange;
+	border: 5px solid rgb(215 156 46);
 	border-radius: 50%;
 }
 
@@ -343,10 +343,17 @@ th > label {
 	border-radius: 50%;
 	color: #fff !important;
 	text-align: center;
+	text-decoration: none;
 	line-height: 1.4em;
 	font-size: 1.5em;
 	font-weight: bolder;
 	margin-top: 1em;
+}
+
+.team-row-items__item--link:hover {
+	text-decoration: none !important;
+	transition: color 1s;
+	color: rgb(215 156 46) !important;
 }
 
 .team-row-items__item--investor {
