@@ -594,7 +594,7 @@ th > label {
     }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 2560px) {
 
     .hero {
         background-size: cover;
