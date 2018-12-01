@@ -124,21 +124,15 @@ button:active {
 
 /* HERO */
 
-.parallax {
-    z-index: -1;
-    position: absolute;
+.hero {
     background-image: url("./assets/hero.png");
+    background-position: top center;
     background-attachment: fixed;
-    width: 100%;
-    height: 50rem;
-}
-
-.hero > .content {
-    padding: 4rem 2rem;
     color: #ffffff;
+    padding: 4rem 2rem;
 }
 
-.content > .btn-main {
+.hero > .btn-main {
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
@@ -245,6 +239,7 @@ th > label {
 
 .ico-small {
     display: block;
+    max-width: 100%;
 }
 
 .app-mobile {
@@ -255,6 +250,9 @@ th > label {
     justify-content: space-between;
 }
 
+.what-is-agau-image {
+    max-width: 100%;
+}
 
 /* TEAM */
 
@@ -459,7 +457,7 @@ th > label {
     }
 
     .app-image img {
-        width: 100%;
+        max-width: 100%;
     }
 
     .app-mobile {
@@ -478,7 +476,8 @@ th > label {
 /* Large devices */
 @media (min-width: 992px) {
 
-    .hero > .content {
+    .hero {
+        background-image: url("./assets/hero-1.png");
         padding: 6rem 4rem;
     }
 
@@ -555,7 +554,7 @@ th > label {
 
     .operating-model-img {
         display: block;
-        width: 100%;
+        max-width: 100%;
     }
 
     .ico-image {
@@ -590,11 +589,15 @@ th > label {
 
 @media (min-width: 1440px) { 
 
-    .parallax {
-        background-image: url("./assets/hero-xl.png");
-    }
-
     .operating-model-img {
         width: auto;
     }
+}
+
+@media (min-width: 1600px) {
+
+    .hero {
+        background-image: url("./assets/hero-xl.png");
+    }
+
 }
