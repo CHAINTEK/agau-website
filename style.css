@@ -126,14 +126,13 @@ button:active {
 
 .hero {
     background-image: url("./assets/hero.png");
-    background-position: top center;
     background-attachment: fixed;
     color: #ffffff;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
 }
 
 .hero > .btn-main {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -478,6 +477,7 @@ th > label {
 
     .hero {
         background-image: url("./assets/hero-1.png");
+        background-position: top center;
         padding: 6rem 4rem;
     }
 
