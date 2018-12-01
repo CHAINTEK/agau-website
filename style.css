@@ -597,7 +597,7 @@ th > label {
 @media (min-width: 1600px) {
 
     .hero {
-        background-image: url("./assets/hero-xl.png");
+        background-size: cover;
     }
 
 }
