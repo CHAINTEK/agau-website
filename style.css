@@ -34,6 +34,10 @@ h6 {
     color: #B28B55;
 }
 
+.gary-background {
+    background-color: #8b8b8b;
+}
+
 .black-background {
     background-color: #000000;
     color: #ffffff;
@@ -51,6 +55,11 @@ h6 {
 .background-decoration {
     background-color: #F2F2F2;
     margin: 0;
+}
+
+.gary-background .background-text {
+    color: #ffffff;
+    font-weight: 300;
 }
 
 .background-decoration .background-text {
