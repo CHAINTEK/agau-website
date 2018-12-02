@@ -34,6 +34,10 @@ h6 {
     color: #B28B55;
 }
 
+.gary-background {
+    background-color: #C0C0C0;
+}
+
 .black-background {
     background-color: #000000;
     color: #ffffff;
@@ -53,6 +57,10 @@ h6 {
     margin: 0;
 }
 
+.gary-background .background-text {
+    color: #ffffff;
+}
+
 .background-decoration .background-text {
     opacity: 1;
 }
@@ -62,7 +70,7 @@ h6 {
     font-size: 2.5rem;
     margin: 0;
     margin-bottom: -1rem;
-    opacity: .15;
+    opacity: 0.2;
 }
 
 iframe {
@@ -116,26 +124,27 @@ button:active {
 
 /* HERO */
 
-.parallax {
-    z-index: -1;
-    position: absolute;
+.hero {
     background-image: url("./assets/hero.png");
     background-attachment: fixed;
-    width: 100%;
-    height: 50rem;
-}
-
-.hero > .content {
-    padding: 4rem 2rem;
     color: #ffffff;
+    padding: 3rem 2rem;
 }
 
-.content > .btn-main {
-    margin-top: 3rem;
+.hero > .btn-main {
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 /* SLIDES */
+
+.menu {
+    display: none;
+}
+
+.dots {
+    display: block;
+}
 
 .dot {
     cursor: pointer;
@@ -190,6 +199,25 @@ th > label {
     color: #ffffff;
 }
 
+.social img {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: #000000;
+}
+
+.form-control:focus {
+    border: none;
+    border-bottom: 1px solid #B28B55;
+    background-color: #000000;
+    outline: none;
+    box-shadow: none;
+    color: #ffffff;
+}
+
 /* IMAGES */
 
 .operating-model-img {
@@ -210,6 +238,7 @@ th > label {
 
 .ico-small {
     display: block;
+    max-width: 100%;
 }
 
 .app-mobile {
@@ -220,8 +249,8 @@ th > label {
     justify-content: space-between;
 }
 
-.social img {
-    margin-bottom: 2rem;
+.what-is-agau-image {
+    max-width: 100%;
 }
 
 /* TEAM */
@@ -427,7 +456,7 @@ th > label {
     }
 
     .app-image img {
-        width: 100%;
+        max-width: 100%;
     }
 
     .app-mobile {
@@ -435,7 +464,7 @@ th > label {
     }
 
     .why-agau {
-        height: 300px;
+        height: 400px;
     }
     
     .how-it-works {
@@ -446,13 +475,9 @@ th > label {
 /* Large devices */
 @media (min-width: 992px) {
 
-    .sticky-footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .hero > .content {
+    .hero {
+        background-image: url("./assets/hero-1.png");
+        background-position: top center;
         padding: 6rem 4rem;
     }
 
@@ -479,14 +504,63 @@ th > label {
         width: 25rem;
     }
 
-    .operating-model-img {
-        display: block;
-        width: 100%;
+    .dots {
+        display: none;
     }
 
-    .ico {
+    .menu > .dot {
+        width: auto;
+        height: auto;
+        transition: none;
+        border: none;
+        border-radius: 0;
+        cursor: default;
+        margin-bottom: 1rem;
+    }
+
+    .how-it-works > .menu {
+        display: inline-block;
+    }
+
+    .how-it-works > .menu > .dot {
+        display: inline-block;
+        background-color: #000000;
+        margin-right: 0.75rem;
+    }
+
+    .how-it-works > .menu > .active-dot {
+        font-size: 1.5rem;
+        color: #B28B55;
+    }
+
+    .how-it-works > .mySlides > h3 {
+        display: none;
+    }
+
+    .why-agau > .menu {
         display: block;
-        width: 100%;
+    }
+
+    .why-agau > .menu > .dot {
+        display: block;
+        background-color: #ffffff;
+    }
+
+    .why-agau > .menu > .active-dot {
+        font-size: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #B28B55;
+    }
+
+    .operating-model-img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .ico-image {
+        display: block;
+        max-width: 100%;
+        margin-left: 1rem;
     }
 
     .ico-small {
@@ -504,7 +578,6 @@ th > label {
     .background-text {
         font-size: 4.5rem;
         margin-bottom: -1.5rem;
-        opacity: 0.1;
     }
 }
 
@@ -516,15 +589,15 @@ th > label {
 
 @media (min-width: 1440px) { 
 
-    .parallax {
-        background-image: url("./assets/hero-xl.png");
-    }
-
     .operating-model-img {
         width: auto;
     }
+}
 
-    .ico {
-        width: auto;
+@media (min-width: 2560px) {
+
+    .hero {
+        background-size: cover;
     }
+
 }
