@@ -3,16 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="./style.css" />
 
 	<title>AgAu Landing</title>
 </head>
 <body>
-	<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+	<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
 		<a class="navbar-brand" href="#">
 			<img src="./assets/logo.png" class="d-inline-block" alt="logo">
 			AgAu.io
@@ -42,18 +44,156 @@
 				</li>
 			</ul>
 		</div>
-	</nav>
-  <div class="space">
-    <h1>UNDER CONSTRUCTION</h1>
+  </nav>
+  <div class="pt-5"></div>
+	<div class="space mb-5 team-hero">
+		<h1 class="team-hero__title">FAQ</h1>
+	</div>
+  <div class="space mb-5 faq">
+    <div class="faq-section">
+	    <div onclick="openSection('section-one', 'faq-arrow-one')" class="faq-section-toggle">
+		    <h2 class="faq-section-toggle__header">WHAT IS AGAU?</h2>
+		    <i  id="faq-arrow-one" class="fas fa-angle-down faq-arrow"></i>
+	    </div>
+	    <p id="section-one" class="faq-section__info">
+		    AgAu is a cryptocurrency token backed by 1gram of physical and allocated gold (Au)
+		    in the case of AgAu.GLD and 1gram of silver (Ag) by AgAu.SLV. AgAu aims to become
+		    the Gold Standard of cryptocurrencies and replace Fiat-cryptocurrencies bringing
+		    back the concept of honest money. We do not swap or lease the precious metal in order
+		    to pay for storage costs because we consider it as the same as fractional reserve
+		    system where the same ounce of metal would be swapped 1 or many times over.
+	    </p>
+    </div>
+	  <div class="faq-section">
+		  <div onclick="openSection('section-two', 'faq-arrow-two')" class="faq-section-toggle">
+			  <h2 class="faq-section-toggle__header">What is the regulation around AgAu tokens?</h2>
+			  <i  id="faq-arrow-two" class="fas fa-angle-down faq-arrow"></i>
+		  </div>
+		  <p id="section-two" class="faq-section__info">
+			  AgAu tokens  could be considered by the Swiss Financial Market Supervisory Authority
+			  FINMA as Payment tokens. According to the ICO guidelines issued by FINMA payment
+			  tokens are synonymous with cryptocurrencies and have no further functions or links
+			  to other development projects. Tokens may in some cases only develop the necessary
+			  functionality and become accepted as a means of payment over a period of time.
+			  We invite you to read the Legal section and disclaimer included in the “white paper”.
+		  </p>
+	  </div>
+	  <div class="faq-section">
+		  <div onclick="openSection('section-three', 'faq-arrow-three')" class="faq-section-toggle">
+			  <h2 class="faq-section-toggle__header">Who can buy and sell AgAu Tokens?</h2>
+			  <i  id="faq-arrow-three" class="fas fa-angle-down faq-arrow"></i>
+		  </div>
+		  <p id="section-three" class="faq-section__info">
+			  AgAu has an ambitious target to issue the equivalent of 500m Swiss Francs (CHF)
+			  of AgAu.GLD and AgAu.SLV to the “primary market” through an ICO, after AgAu tokens
+			  will be available to trade between crypto wallets through exchanges and decentralised
+			  applications. Like any other ERC-20 token, owners will be able to store them in Ethereum
+			  wallets.
+		  </p>
+	  </div>
+	  <div class="faq-section">
+		  <div onclick="openSection('section-four', 'faq-arrow-four')" class="faq-section-toggle">
+			  <h2 class="faq-section-toggle__header">Can AgAu token holders redeem their coins for physical metal?</h2>
+			  <i  id="faq-arrow-four" class="fas fa-angle-down faq-arrow"></i>
+		  </div>
+		  <p id="section-four" class="faq-section__info">
+			  Yes, AgAu aims to offer possible redemption anytime to AgAu token holders in different secured
+			  locations and through different mechanisms. AgAu is currently exploring different partnerships
+			  to offer more options to AgAu token holders.  Where is AgAu token physical metal stored? AgAu will
+			  be storing the allocated physical metal in secure vaults in Switzerland and possibly other
+			  locations. We are studying partnerships to be able to redeem the metal in different other
+			  locations.
+			  What is the difference between allocated and unallocated gold?
+			  Check out our special section about Allocated vs Unallocated gold.
+		  </p>
+	  </div>
+	  <div class="faq-section">
+		  <div onclick="openSection('section-five', 'faq-arrow-five')" class="faq-section-toggle">
+			  <h2 class="faq-section-toggle__header">Is the physical metal allocated?</h2>
+			  <i  id="faq-arrow-five" class="fas fa-angle-down faq-arrow"></i>
+		  </div>
+		  <p id="section-five" class="faq-section__info">
+			  Yes, the physical metal is allocated as opposed to many of our competitors. This means
+			  that every batch of 1000 AgAu.GLD tokens (1000g) will be attributed to a specific audited
+			  and inspected gold (Au) bar with traceable serial number. In the same way, every batch of
+			  1000 AgAu.SLV tokens (1000g) will be attributed to a specific audited and inspected 1kg
+			  silver (Ag) bar with traceable serial number.
+		  </p>
+	  </div>
+	  <div class="faq-section">
+		  <div onclick="openSection('section-six', 'faq-arrow-six')" class="faq-section-toggle">
+			  <h2 class="faq-section-toggle__header">What are the implications of allocated precious metals?</h2>
+			  <i  id="faq-arrow-six" class="fas fa-angle-down faq-arrow"></i>
+		  </div>
+		  <p id="section-six" class="faq-section__info">
+			  Allocated precious metals simply means that the metal owner has the security that the
+			  precious metal is attributed to a specific, audited and inspected bar with a traceable
+			  serial number. This has some implications:
+			  <br/>
+			  The precious metal cannot be swapped or leased. Swapping or leasing is a common practice in
+			  the precious metals market by witch the assets are borrowed and leased in order to provide
+			  temporary ownership of the assets (metal) to the borrower in exchange for a fee or interest
+			  rate. This allows for many physical gold holders to receive an extra income sometimes
+			  covering the storage and other costs.
+			  <br/>
+			  The precious metal is property of the owner at all times. No one, at any time can claim
+			  property of the assets. By contrast, allocated precious metals implies the owner has to
+			  cover himself for the Storage and other costs. For AgAu, the problem is solved by taking
+			  the annual storage cost, say 0,5% annually and divided by 365 days so that the cost spreads
+			  over time on a daily basis.
+			  <br/>
+			  TARCO plans to develop other banking-like services in order to give the optionality for
+			  those who are not in immediate need of cash and therefore enable them to put their AgAu
+			  tokens to work. Stay informed about our news and developments by joining our community.
+		  </p>
+	  </div>
+	  <div class="faq-section">
+		  <div onclick="openSection('section-seven', 'faq-arrow-seven')" class="faq-section-toggle">
+			  <h2 class="faq-section-toggle__header">Is the physical precious metal Audited?</h2>
+			  <i  id="faq-arrow-seven" class="fas fa-angle-down faq-arrow"></i>
+		  </div>
+		  <p id="section-seven" class="faq-section__info">
+			  The physical precious metal is inspected, audited by external, independent and accredited
+			  auditors every 2 to 6 months. We want to be transparent and therefore offer additional
+			  audits on request whenever the token holders consensus sees fit.
+		  </p>
+	  </div>
+	  <div class="faq-section">
+		  <div onclick="openSection('section-eight', 'faq-arrow-eight')" class="faq-section-toggle">
+			  <h2 class="faq-section-toggle__header">What is the Token Holders Consensus?</h2>
+			  <i  id="faq-arrow-eight" class="fas fa-angle-down faq-arrow"></i>
+		  </div>
+		  <p id="section-eight" class="faq-section__info">
+			  AgAu plans to establish a Token Holders Consensus in order to be able to take into account
+			  the AgAu community’s recommendations and opinions and build an idea meritocracy. Learn more
+			  in our AgAu Community & Rewards section.
+		  </p>
+	  </div>
+	  <div class="faq-section">
+		  <div onclick="openSection('section-nine', 'faq-arrow-nine')" class="faq-section-toggle">
+			  <h2 class="faq-section-toggle__header">What is blockchain?</h2>
+			  <i  id="faq-arrow-nine" class="fas fa-angle-down faq-arrow"></i>
+		  </div>
+		  <p id="section-nine" class="faq-section__info">
+			  AgAu uses blockchain technology. Blockchain is a distributed ledger of transactions,
+			  maintained by a network of computers. The ledger is continually updated and replicated across
+			  the network keeping the record of transactions copied and in sync between the users. Blockchain
+			  provides transparency and  traceability of the movement of digital assets therefore giving
+			  impeded trust in the system by having a constant verification of integrity, the chain of
+			  information and its transactions. Transactions are secure using cryptography. Cryptographic
+			  signatures limit who can create transactions and access the data to only those who can prove
+			  their ownership through unique private keys (very secured password).
+		  </p>
+	  </div>
   </div>
   
   <div class="space black-background footer sticky-footer" id="footer">
     <div class="row">
       <div class="col-sm-2">
-        <h4 class="mb-4">Links</h4>
+        <h4 class="mb-4 mt-3">Links</h4>
         <div class="d-flex links">
           <a href="#">Terms of use</a>
-          <a href="#">Primacy policy</a>
+          <a href="#">Privacy policy</a>
         </div>
       </div>
       <div class="col-sm-6">
@@ -111,6 +251,13 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script>
+      function openSection(section, arrow) {
+          document.getElementById(section).classList.toggle("faq-show");
+          document.getElementById(arrow).classList.toggle("faq-arrow-transform");
+      }
+	</script>
 
 </body>
 </html>
