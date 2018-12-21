@@ -407,6 +407,117 @@ th > label {
 	visibility: hidden;
 }
 
+/* MEDIA */
+
+.media-row-items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.media-row-header {
+	color: rgb(215 156 46);
+	font-size: 1.5em;
+	margin: 2em 0 2em 0;
+}
+
+.media-row-items__item {
+	max-width: 25em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.media-item-image {
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+.media-item-image > img{
+	width: 100%;
+}
+
+.media-item-date {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.media-item-date__date {
+	color: rgb(215 156 46);
+}
+
+.media-item-date__author {
+	color: rgb(202 201 202);
+}
+
+.media-item-title {
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.media-item-title > a {
+	color: #000;
+}
+
+.media-item-title > a:hover {
+	text-decoration: none;
+}
+
+.media-item-text {
+	color: rgb(202 201 202);
+	font-size: 1.2em;
+}
+
+.media-featured {
+	display: flex;
+	justify-content: space-between;
+}
+
+.media-featured-image {
+	width: 48%;
+}
+
+.media-featured-image > img {
+	width: 100%;
+}
+
+.media-featured-post {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.media-featured-post__title {
+	color: #000;
+}
+
+.media-featured-post__title:hover {
+	text-decoration: none;
+}
+
+.media-featured-post__date {
+	color: rgb(215 156 46);
+	font-size: 1.2em;
+	margin: 1em 0 1em 0;
+}
+
+.media-featured-post__author {
+	color: rgb(202 201 202);
+	font-size: 1.2em;
+}
+
+.media-more-posts {
+	width: 10em;
+	background-color: rgb(215 156 46);
+	color: #fff;
+	text-align: center;
+	margin-top: 1em;
+	padding: 1em;
+}
+
 /* FAQ */
 
 .faq {
@@ -613,6 +724,31 @@ th > label {
 }
 
 /* Large devices */
+
+@media (max-width: 992px) {
+	.media-row-items {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.media-row-items__item {
+		max-width: 100% !important;
+	}
+
+	.media-featured {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.media-featured-image {
+		width: 100%;
+	}
+
+	.media-featured-post {
+		width: 100%;
+	}
+}
+
 @media (min-width: 992px) {
 
     .hero {
@@ -725,10 +861,19 @@ th > label {
 	.team-row__items--item-blank {
 		display: none;
 	}
+
+	.media-row-items__item {
+		max-width: 15em;
+	}
 }
 
-@media (min-width: 1440px) { 
+@media (max-width: 1460px) {
+	.media-row-items__item {
+		max-width: 20em;
+	}
+}
 
+@media (min-width: 1440px) {
     .operating-model-img {
         width: auto;
     }
