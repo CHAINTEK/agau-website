@@ -56,12 +56,12 @@
     <div class="">
         <p>
             <a class="btn btn-main btn-lg" target="_blank"
-              href="https://drive.google.com/open?id=1paNT-t-gz5sXbv-AaPnu3dHMYU6rhIYz"
+               href="https://drive.google.com/open?id=1paNT-t-gz5sXbv-AaPnu3dHMYU6rhIYz"
             >Whitepaper</a>
         </p>
         <p>
             <a class="btn btn-main btn-lg" target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc0kUKOf4nNOVUnLTqYenUTYJQ5vZmQUv59NfoL58pN5CUEUw/viewform"
+               href="https://docs.google.com/forms/d/e/1FAIpQLSc0kUKOf4nNOVUnLTqYenUTYJQ5vZmQUv59NfoL58pN5CUEUw/viewform"
             >Register Your Interest</a>
         </p>
     </div>
@@ -1033,25 +1033,21 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 <script type="text/javascript">
-  (function ($) {
-    window.fnames = new Array();
-    window.ftypes = new Array();
 
-    fnames[0] = 'EMAIL';
-    ftypes[0] = 'email';
-    fnames[1] = 'FNAME';
-    ftypes[1] = 'text';
-    fnames[2] = 'LNAME';
-    ftypes[2] = 'text';
-    fnames[3] = 'ADDRESS';
-    ftypes[3] = 'address';
-    fnames[4] = 'PHONE';
-    ftypes[4] = 'phone';
-  }(jQuery));
+  const formRegister = {
+    "EMAIL"  : "email",
+    "FNAME"  : "text",
+    "LNAME"  : "text",
+    "ADDRESS": "address",
+    "PHONE"  : "phone"
+  };
 
-  var $mcj = jQuery.noConflict(true);
+  window.fnames = Object.keys(formRegister);
+  window.ftypes = Object.values(formRegister);
+
 </script>
 <script type="text/javascript">
+
   var slideIndex = 1;
   init();
 
